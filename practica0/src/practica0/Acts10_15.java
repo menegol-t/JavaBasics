@@ -1,6 +1,6 @@
 package practica0;
 
-public class Acts10 {
+public class Acts10_15 {
 	//10
 	public static int sumatoria(int n) {
 		int i = 1;
