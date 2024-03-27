@@ -1,16 +1,15 @@
-package intro;
+package practica0;
 import java.util.Scanner;
 
-public class Practica0 {
-		
+public class Acts1_9 {	
 	public static double tecladoFloat() {
 		Scanner numero = new Scanner(System.in);
 		return numero.nextDouble();
 	}
 	
 	public static int tecladoInt() {
-		Scanner tuki = new Scanner(System.in);
-		return tuki.nextInt();
+		Scanner numero = new Scanner(System.in);
+		return numero.nextInt();
 	}
 	
 	//1
@@ -80,18 +79,13 @@ public class Practica0 {
 		
 		System.out.println(dia + " de " + mos + " de " + anio);
 	}
-
-	//10
-	public static int sumatoria(int n) {
-		return n;
-	}
 	
 	public static void main(String [] args) {
-//		//1
-//		holaMundo();
-//		
-//		//2
-//		Scanner nombre = new Scanner(System.in); holaNombre(nombre.next()); nombre.close();
+		//1
+		holaMundo();
+	
+		//2
+		Scanner nombre = new Scanner(System.in); holaNombre(nombre.next()); nombre.close();
 		
 		//3
 		System.out.println("La suma es: "+ imprimirSuma(tecladoInt(), tecladoInt()));
