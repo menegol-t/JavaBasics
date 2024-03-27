@@ -2,7 +2,7 @@ package practica0;
 import java.util.Scanner;
 
 public class Acts1_9 {	
-	public static double tecladoFloat() {
+	public static double tecladoDouble() {
 		Scanner numero = new Scanner(System.in);
 		return numero.nextDouble();
 	}
@@ -97,7 +97,7 @@ public class Acts1_9 {
 		System.out.print("El promedio es: " + imprimirPromedio(tecladoInt(), tecladoInt()));
 		
 		//8
-		System.out.print(ponerNota(tecladoFloat(), tecladoFloat()));
+		System.out.print(ponerNota(tecladoDouble(), tecladoDouble()));
 		
 		//9
 		imprimirFecha(tecladoInt(),tecladoInt(),tecladoInt());
