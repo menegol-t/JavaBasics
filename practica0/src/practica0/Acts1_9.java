@@ -16,7 +16,7 @@ public class Acts1_9 {
 	
 	public static String tecladoTxt() {
 		Scanner txt = new Scanner(System.in);
-		txt.close();
+//		txt.close();
 		return txt.nextLine();
 	}
 	
