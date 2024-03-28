@@ -1,6 +1,6 @@
 package practica0;
 
-public class Act16_20 {
+public class Act16_22 {
 	//16
 	public static String reversa(String s) {
 		int i = s.length() - 1;
@@ -57,6 +57,22 @@ public class Act16_20 {
 		}
 		return false;
 	}
+	
+	//21
+	public static boolean esSinRepetidos(String s) {
+		int i = 0;
+		while (i < s.length()-1) {
+			int j = i+1;
+			while(j <= s.length() - 1) {
+				if (s.charAt(i) == s.charAt(j)) {
+					return false;
+				}
+				j++;
+			}
+			i++;
+		}
+		return true;
+	}
 
 	public static void main (String[] args) {
 		//16 Imprime el string en reversa
@@ -73,5 +89,8 @@ public class Act16_20 {
 		
 		//20 Retorna true si la palabra se lee igual al delante o al reves
 //		System.out.println(esCapicua(Acts1_9.tecladoTxt()));
+		
+		//21
+//		System.out.println(esSinRepetidos(Acts1_9.tecladoTxt()));
 	}
 }
