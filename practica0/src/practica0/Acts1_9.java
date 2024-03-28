@@ -4,12 +4,20 @@ import java.util.Scanner;
 public class Acts1_9 {	
 	public static double tecladoDouble() {
 		Scanner numero = new Scanner(System.in);
+		numero.close();
 		return numero.nextDouble();
 	}
 	
 	public static int tecladoInt() {
 		Scanner numero = new Scanner(System.in);
+		numero.close();
 		return numero.nextInt();
+	}
+	
+	public static String tecladoTxt() {
+		Scanner txt = new Scanner(System.in);
+		txt.close();
+		return txt.nextLine();
 	}
 	
 	//1
@@ -82,24 +90,24 @@ public class Acts1_9 {
 	
 	public static void main(String [] args) {
 		//1
-		holaMundo();
+//		holaMundo();
 	
 		//2
-		Scanner nombre = new Scanner(System.in); holaNombre(nombre.next()); nombre.close();
+//		holaNombre(tecladoTxt()); 		
 		
 		//3
-		System.out.println("La suma es: "+ imprimirSuma(tecladoInt(), tecladoInt()));
+//		System.out.println("La suma es: "+ imprimirSuma(tecladoInt(), tecladoInt()));
 		
 		//4
-		imprimirDivisiones();
+//		imprimirDivisiones();
 		
 		//5
-		System.out.print("El promedio es: " + imprimirPromedio(tecladoInt(), tecladoInt()));
+//		System.out.print("El promedio es: " + imprimirPromedio(tecladoInt(), tecladoInt()));
 		
 		//8
-		System.out.print(ponerNota(tecladoDouble(), tecladoDouble()));
+//		System.out.print(ponerNota(tecladoDouble(), tecladoDouble()));
 		
 		//9
-		imprimirFecha(tecladoInt(),tecladoInt(),tecladoInt());
+//		imprimirFecha(tecladoInt(),tecladoInt(),tecladoInt());
 	}
 }
