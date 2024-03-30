@@ -4,20 +4,23 @@ import java.util.Scanner;
 public class Acts1_9 {	
 	public static double tecladoDouble() {
 		Scanner numero = new Scanner(System.in);
+		double num = numero.nextDouble();
 		numero.close();
-		return numero.nextDouble();
+		return num;
 	}
 	
 	public static int tecladoInt() {
 		Scanner numero = new Scanner(System.in);
+		int num = numero.nextInt();
 		numero.close();
-		return numero.nextInt();
+		return num;
 	}
 	
 	public static String tecladoTxt() {
 		Scanner txt = new Scanner(System.in);
-//		txt.close();
-		return txt.nextLine();
+		String t = txt.nextLine();
+		txt.close();
+		return t;
 	}
 	
 	//1
