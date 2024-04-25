@@ -32,6 +32,14 @@ public class Acts30_35 {
 		}
 		return x * potenciaRec(x,a - 1);
 	}
+	//D
+	public static int factorialRec(int n) {
+		if(n == 1) {
+			return 1;
+		}
+		
+		return n * factorialRec(n-1);
+	}
 	
 	public static void main(String[] args) {
 		//A
@@ -42,6 +50,9 @@ public class Acts30_35 {
 		
 		//C
 //		System.out.println(potenciaRec(T.Dou(), T.Int()));
+		
+		//D
+//		System.out.print(factorialRec(T.Int()));
 		
 		T.closeScan();
 	}

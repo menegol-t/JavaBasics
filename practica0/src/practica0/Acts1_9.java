@@ -1,5 +1,4 @@
 package practica0;
-import java.util.Scanner;
 
 public class Acts1_9 {	
 	//1
