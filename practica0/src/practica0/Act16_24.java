@@ -185,30 +185,32 @@ public class Act16_24 {
 
 	public static void main (String[] args) {
 		//16 Imprime el string en reversa
-		System.out.println(reversa(Acts1_9.tecladoTxt()));
+		System.out.println(reversa(T.Str()));
 		
 		//17 Te dice la cantidad de apariciones de una letra en un string
-//		System.out.println(cantidadDeApariciones(Acts1_9.tecladoTxt(), (Acts1_9.tecladoTxt()).charAt(0)));
+//		System.out.println(cantidadDeApariciones(T.Str(), (T.Str()).charAt(0)));
 		
 		//18 Te dice la cantidad de vocales en un string
-//		System.out.println(cantidadDeVocales(Acts1_9.tecladoTxt()));
+//		System.out.println(cantidadDeVocales(T.Str()));
 		
 		//19 ¿Las letras aparecen siguiendo el orden del abecedario? Himno: true, casa: false
-//		System.out.println(esAbecedaria(Acts1_9.tecladoTxt()));
+//		System.out.println(esAbecedaria(T.Str()));
 		
 		//20 Retorna true si la palabra se lee igual al delante o al reves
-//		System.out.println(esCapicua(Acts1_9.tecladoTxt()));
+//		System.out.println(esCapicua(T.Str()));
 		
 		//21 Devuele true si no hay chars repetidos en el String
-//		System.out.println(esSinRepetidos(Acts1_9.tecladoTxt()));
+//		System.out.println(esSinRepetidos(T.Str()));
 		
 		//22 Devuelve el String unicamente con la primera aparicion de cada cadena repetida: camaleon -> camleon
-//		System.out.println(sinRepetidos(Acts1_9.tecladoTxt()));
+//		System.out.println(sinRepetidos(T.Str()));
 		
 		//23 Chequea si el primer y ultimo string tienen letras compartidas con el segundo string, de tal moodo que B tenga alguna letra que coincida con A, y a la vez 
-//		System.out.println(puedenColocarse(Acts1_9.tecladoTxt(), Acts1_9.tecladoTxt(), Acts1_9.tecladoTxt()));
+//		System.out.println(puedenColocarse(T.Str(), T.Str(), T.Str()));
 		
 		//24 Se fija si una palabra se puede separar en 2 capicua. Si se puede, responde true
-//		System.out.println(dobleteCapicua(Acts1_9.tecladoTxt()));
+//		System.out.println(dobleteCapicua(T.Str()));
+	
+		T.closeScan();
 	}
 }

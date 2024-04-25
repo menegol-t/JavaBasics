@@ -2,27 +2,6 @@ package practica0;
 import java.util.Scanner;
 
 public class Acts1_9 {	
-	public static double tecladoDouble() {
-		Scanner numero = new Scanner(System.in);
-		double num = numero.nextDouble();
-		numero.close();
-		return num;
-	}
-	
-	public static int tecladoInt() {
-		Scanner numero = new Scanner(System.in);
-		int num = numero.nextInt();
-		numero.close();
-		return num;
-	}
-	
-	public static String tecladoTxt() {
-		Scanner txt = new Scanner(System.in);
-		String t = txt.nextLine();
-		txt.close();
-		return t;
-	}
-	
 	//1
 	public static void holaMundo() {
 		System.out.println("Hola mundo!");
@@ -96,21 +75,23 @@ public class Acts1_9 {
 //		holaMundo();
 	
 		//2
-//		holaNombre(tecladoTxt()); 		
+//		holaNombre(T.Str()); 		
 		
 		//3
-//		System.out.println("La suma es: "+ imprimirSuma(tecladoInt(), tecladoInt()));
+//		System.out.println("La suma es: "+ imprimirSuma(T.Int(), T.Int()));
 		
 		//4
 //		imprimirDivisiones();
 		
 		//5
-//		System.out.print("El promedio es: " + imprimirPromedio(tecladoInt(), tecladoInt()));
+//		System.out.print("El promedio es: " + imprimirPromedio(T.Int(), T.Int()));
 		
 		//8
-//		System.out.print(ponerNota(tecladoDouble(), tecladoDouble()));
+//		System.out.print(ponerNota(T.Dou(), T.Dou()));
 		
 		//9
-//		imprimirFecha(tecladoInt(),tecladoInt(),tecladoInt());
+//		imprimirFecha(T.Int(),T.Int(),T.Int());
+		
+		T.closeScan();
 	}
 }

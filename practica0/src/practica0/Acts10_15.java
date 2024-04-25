@@ -72,21 +72,23 @@ public class Acts10_15 {
 	
 	public static void main(String[] args) {
 		//10 Suma todos los numeros mas chicos que el numero
-//		System.out.println(sumatoria(Acts1_9.tecladoInt()));
+//		System.out.println(sumatoria(T.Int()));
 		
 		//11 Suma todos los numeros pares mas chicos que el numero
-//		System.out.println(sumatoriaPares(Acts1_9.tecladoInt()));
+//		System.out.println(sumatoriaPares(T.Int()));
 		
 		//12 Calcula la potencia de un numero dandole la base y el exponente
-//		System.out.println(potencia(Acts1_9.tecladoDouble(), Acts1_9.tecladoInt()));
+//		System.out.println(potencia(T.Dou(), T.Int()));
 		
 		//13 Calcula el factorial de un numero
-//		System.out.println(factorial(Acts1_9.tecladoInt()));
+//		System.out.println(factorial(T.Int()));
 		
 		//14 Cantidad de cifras que tiene el numero
-//		System.out.println(contarCifras(Acts1_9.tecladoInt()));
+//		System.out.println(contarCifras(T.Int()));
 		
 		//15 True si el primer numero es divisible por el segundo
-//		System.out.println(esDivisible(Acts1_9.tecladoInt(), Acts1_9.tecladoInt()));
+//		System.out.println(esDivisible(T.Int(), T.Int()));
+		
+		T.closeScan();
 	}
 }

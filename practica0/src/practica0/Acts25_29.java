@@ -63,8 +63,8 @@ public class Acts25_29 {
 	}
 	
 	public static void main(String [] args) {
-		int[] A = {0, 6, 8, 1, 15, 7, 24};
-		double[] B = {0.6, 8.1, 15.7, 24};
+//		int[] A = {0, 6, 8, 1, 15, 7, 24};
+//		double[] B = {0.6, 8.1, 15.7, 24};
 		
 		//25
 //		System.out.println(maximo(A));
