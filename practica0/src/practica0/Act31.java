@@ -29,8 +29,30 @@ public class Act31 {
 	 * 															3
 	 * */
 	
+	//B
+	public static int fibiter(int n) {
+		int[] numeros = new int[n+1];
+		
+		numeros[0] = 0;
+		
+		if(n == 0 || n == 1) {
+			return n;
+		}
+		
+		for(int i = 1; i<=n;i++) {
+			if(i==1) {
+				numeros[i] = 1;
+			}else {
+				numeros[i] = numeros[i-2] + numeros[i-1];
+			}
+		}
+		return numeros[n];
+	}
+	
 	public static void main(String[] args) {
 		//A
-		System.out.print(fibrec(T.Int()));
+//		System.out.print(fibrec(T.Int()));
+		//B
+//		System.out.print(fibiter(T.Int()));
 	}
 }
