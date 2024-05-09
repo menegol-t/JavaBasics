@@ -1,6 +1,6 @@
 package practica0;
 
-public class Acts30_35 {
+public class Act30 {
 	
 	//30
 	//A
@@ -37,7 +37,6 @@ public class Acts30_35 {
 		if(n == 1) {
 			return 1;
 		}
-		
 		return n * factorialRec(n-1);
 	}
 	
