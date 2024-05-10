@@ -54,5 +54,7 @@ public class Act31 {
 //		System.out.print(fibrec(T.Int()));
 		//B
 //		System.out.print(fibiter(T.Int()));
+		
+		T.closeScan();
 	}
 }
