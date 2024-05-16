@@ -1,4 +1,5 @@
 package resolucion;
+import practica0.Acts32_35;
 
 public class Fraccion {
     int numerador;
@@ -8,6 +9,9 @@ public class Fraccion {
     public Fraccion(int n, int d) {
     	this.numerador = n;
     	this.denominador = d;
+    	if(n == 0 || d == 0) {
+    		throw new ArithmeticException("ERROR: No se admiten ceros en el numerador ni denominador. ");
+    	}
     }
     
     //B
@@ -18,19 +22,6 @@ public class Fraccion {
     //C
     public void invertirSigno() {
     	this.numerador = this.numerador * -1;
-//    	if(this.numerador < 0) {
-//    		if(this.denominador < 0) {
-//    			this.denominador = this.denominador * -1;
-//    		}else if(this.denominador > 0){
-//    			this.numerador = this.numerador * -1;
-//    		}
-//    	}else if(this.numerador > 0) {
-//    		if(this.denominador < 0) {
-//    			this.denominador = this.denominador * -1;
-//    		}else if(this.denominador > 0){
-//    			this.numerador = this.numerador * -1;
-//    		}
-//    	}
     }
     
     //D
@@ -43,5 +34,26 @@ public class Fraccion {
     //E
     public double aDouble() {
     	return (double)this.numerador/this.denominador; 
+    }
+    
+    //F
+    public void reducir() {
+    	int mcd = Acts32_35.mcd(this.numerador, this.denominador);
+    	this.numerador = this.numerador/mcd;
+    	this.denominador = this.denominador/mcd;
+    }
+    
+    //G
+    static public Fraccion producto(Fraccion q1, Fraccion q2) {
+    	int num = q1.numerador * q2.numerador;
+    	int den = q1.denominador * q2.denominador;
+    	
+    	Fraccion resultado = new Fraccion(num, den);
+    	int mcd = Acts32_35.mcd(resultado.numerador, resultado.denominador);
+    	
+    	resultado.numerador = resultado.numerador /mcd;
+    	resultado.denominador = resultado.denominador/mcd;
+    	
+    	return resultado;
     }
 }

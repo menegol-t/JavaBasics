@@ -30,7 +30,6 @@ public class Acts32_35 {
 	//33
 	public static int mcd(int a, int b) {
 		if(b == 0) {
-			System.out.println(a);
 			return a;
 		}
 		else {
@@ -107,7 +106,7 @@ public class Acts32_35 {
 //		collatzRec(T.Int());
 		
 		//33
-//		mcd(T.Int(), T.Int());
+//		System.out.println(mcd(T.Int(), T.Int()));
 		
 		//34
 //		System.out.println(asterizcosRec(T.Str()));
