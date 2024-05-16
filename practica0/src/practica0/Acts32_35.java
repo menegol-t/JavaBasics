@@ -2,17 +2,17 @@ package practica0;
 
 public class Acts32_35 {
 	//32
-	public static void collatz(int n) {	
-		while(n != 1) {
-			if (n % 2 == 0) {
-				n = n/2;
-				System.out.println(n);
-			}else {
-				n = 3*n+1;
-				System.out.println(n);
-			}
-		}
-	}
+//	public static void collatz(int n) {	
+//		while(n != 1) {
+//			if (n % 2 == 0) {
+//				n = n/2;
+//				System.out.println(n);
+//			}else {
+//				n = 3*n+1;
+//				System.out.println(n);
+//			}
+//		}
+//	}
 	//32 pero recursiva
 	public static int collatzRec(int n) {
 		if(n == 1) return 1;
@@ -40,44 +40,80 @@ public class Acts32_35 {
 	}
 	
 	//34
-	public static String asterizcos(String s) {
-		String nueva = "";
-		for(int i = 0; i<s.length(); i++) {
-			if(i<s.length()-1) {
-				nueva += s.charAt(i) + "*";
-			}else{
-				nueva+= s.charAt(i);
-			}
+//	public static String asterizcos(String s) {
+//		String nueva = "";
+//		for(int i = 0; i<s.length(); i++) {
+//			if(i<s.length()-1) {
+//				nueva += s.charAt(i) + "*";
+//			}else{
+//				nueva+= s.charAt(i);
+//			}
+//		}
+//		return nueva;
+//	}
+	
+	//34 Auxiliar resto
+	public static String resto(String s) {
+		String nuevo = "";
+		for(int i=1; i<s.length();i++) {
+			nuevo += s.charAt(i); 
 		}
-		return nueva;
+		return nuevo;
+	}
+	
+	//34 pero recursiva
+	public static String asterizcosRec(String s) {
+		if(s.length() == 1) {
+			return s;
+		}
+		
+		if(s.charAt(0) != '*') {
+			return s.charAt(0) + "*" + asterizcosRec(resto(s));
+		}else {
+			return asterizcosRec(resto(s));
+		}
 	}
 	
 	//35
-	public static String sinRepetidosContiguos(String s) {
-		String nueva = "";
-		for(int i = 0;i<s.length();i++) {
-			if(i == s.length()-1) {
-				nueva+=s.charAt(i);
-			}
-			else if(s.charAt(i) != s.charAt(i+1) ) {
-				nueva+=s.charAt(i);
-			}
+//	public static String sinRepetidosContiguos(String s) {
+//		String nueva = "";
+//		for(int i = 0;i<s.length();i++) {
+//			if(i == s.length()-1) {
+//				nueva+=s.charAt(i);
+//			}
+//			else if(s.charAt(i) != s.charAt(i+1) ) {
+//				nueva+=s.charAt(i);
+//			}
+//		}
+//		return nueva; 
+//	}
+	
+	//35 pero recusriva
+	public static String sinRepetidosContiguosRec(String s) {
+		
+		if(s.length() == 1){
+			return s;
 		}
-		return nueva; 
+		
+		if(s.charAt(0) == s.charAt(1)) {
+			return sinRepetidosContiguosRec(resto(s));
+		}else {
+			return s.charAt(0) + sinRepetidosContiguosRec(resto(s));
+		}
 	}
 	
 	public static void main(String[] args) {
 		//32
-//		collatz(T.Int());
+//		collatzRec(T.Int());
 		
 		//33
 //		mcd(T.Int(), T.Int());
 		
 		//34
-//		System.out.println(asterizcos(T.Str()));
+//		System.out.println(asterizcosRec(T.Str()));
 		
 		//35
-//		System.out.print(sinRepetidosContiguos(T.Str()));
+//		System.out.print(sinRepetidosContiguosRec(T.Str()));
 		
 		T.closeScan();
 	}
