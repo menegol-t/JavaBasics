@@ -2,24 +2,27 @@ package resolucion;
 
 public class Main {
 	public static void main(String[] args){
-		//A
+		//1)A
 		Fraccion f = new Fraccion(9,10);
-		//B
+		
+		f.editarNum(32);
+		//1)B
 		f.imprimir();
-		//C
+		//1)C
 		f.invertirSigno();f.imprimir();
-		//D
+		//1)D
 		f.invertir();f.imprimir();
-		//E
+		//1)E
 		System.out.println(f.aDouble());
-		//F
+		//1)F
 		f.reducir();f.imprimir();
-		//G
+		//1)G
 		Fraccion g = new Fraccion(20,30);
 		Fraccion.producto(f, g).imprimir();
-		//H
+		//1)H
 		Fraccion.suma(f, g).imprimir();
 		
+		//2A
+		
 	}
-
 }

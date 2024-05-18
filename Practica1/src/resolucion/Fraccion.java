@@ -2,16 +2,43 @@ package resolucion;
 import practica0.Acts32_35;
 
 public class Fraccion {
-    int numerador;
-    int denominador;
+    private int numerador;
+    private int denominador;
     
     //A
     public Fraccion(int n, int d) {
-    	this.numerador = n;
-    	this.denominador = d;
     	if(n == 0 || d == 0) {
     		throw new ArithmeticException("ERROR: No se admiten ceros en el numerador ni denominador. ");
+    	}else {
+    		this.numerador = n;
+        	this.denominador = d;
+    	}   	
+    }
+    
+    //Setter
+    public void editarNum(int a) {
+    	if(a == 0) {
+    		throw new ArithmeticException("ERROR: No se admiten ceros en el numerador. ");	
+    	}else {
+    		this.numerador = a;
     	}
+    }
+    
+    public void editarDen(int a) {
+    	if(a == 0) {
+    		throw new ArithmeticException("ERROR: No se admiten ceros en el denominador. ");	
+    	}else {
+    		this.denominador = a;
+    	}
+    }
+    
+    //Getter
+    public int getNum() {
+    	return this.numerador;
+    }
+    
+    public int getDen() {
+    	return this.denominador;
     }
     
     //B
