@@ -23,15 +23,27 @@ public class Main {
 //		//1)H
 //		Fraccion.suma(f, g).imprimir();
 		
-		//2A
-		Punto p = new Punto();
-		//2B
-		Punto g = new Punto(150.3,230.5);
-		//2C
-		p.imprimir();g.imprimir();
-		//2D
-		p.desplazar(16, 31.5); p.imprimir();
-		//2E
-		Punto.distancia(p, g).imprimir();;
+//		//2A
+//		Punto p = new Punto();
+//		//2B
+//		Punto g = new Punto(150.3,230.5);
+//		//2C
+//		p.imprimir();g.imprimir();
+//		//2D
+//		p.desplazar(16, 31.5); p.imprimir();
+//		//2E
+//		Punto.distancia(p, g).imprimir();;
+		
+		//3A
+		Circulo c = new Circulo(15.6, 36.7, 3);
+		//3B
+		c.imprimir();
+		//3C
+		System.out.println(c.perimetro() + "\n" + c.superficie());
+		//3D 
+		c.escalar(2); c.imprimir();
+		//3E
+		c.desplazar(50, 77);c.imprimir();
+		
 	}
 }

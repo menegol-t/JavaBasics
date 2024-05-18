@@ -46,10 +46,17 @@ public class Punto {
 	}
 	
 	//E
-	static public Punto distancia(Punto p1, Punto p2) {
-		double x = p1.x - p2.x;
-		double y = p1.y - p2.y;
-		Punto w = new Punto(x,y);
-		return w;
+	static public double distancia(Punto p1, Punto p2) {
+//		double x = p1.x - p2.x;
+//		double y = p1.y - p2.y;
+//		Punto w = new Punto(x,y);
+//		return w;
+		if(p1.x > p2.x) {
+			double tmp = p1.x;
+			p1.x = p2.x;
+			p2.x = tmp;
+		}
+		
+		return p2.x - p1.x; //devuelve la distancia en X de los dos numeros
 	}
 }
