@@ -16,9 +16,9 @@ public class Main {
 		f.reducir();f.imprimir();
 		//G
 		Fraccion g = new Fraccion(20,30);
-		System.out.print(Fraccion.producto(f, g).numerador + "/" + Fraccion.producto(f, g).denominador);
+		Fraccion.producto(f, g).imprimir();
 		//H
-		
+		Fraccion.suma(f, g).imprimir();
 		
 	}
 
